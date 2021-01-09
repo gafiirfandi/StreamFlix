@@ -35,7 +35,7 @@ function DetailMovie(props) {
       let len = str_price.length;
       for (let char in str_price) {
         str_price_idr += str_price[char];
-        if (counter === 3 && char !== len - 1) {
+        if (counter == 3 && char != len - 1) {
           counter = 0;
           str_price_idr += ".";
         }
@@ -63,15 +63,20 @@ function DetailMovie(props) {
 
   const handlePurchase = (movieId, price) => {
     let newMoney = currentMoney - getPrice();
-    let newOwnedMovies = [...currentOwnedMovies];
-    newOwnedMovies.push(movie.id);
-    dispatch(setCurrentMoney(newMoney));
-    dispatch(setCurrentOwnedMovies([...newOwnedMovies]));
-    alert(
-      `Purchase on Movie ID: ${movie.id} for Rp${getIdrPrice(
-        getPrice()
-      )} was successful!`
-    );
+
+    if (newMoney >= 0) {
+      let newOwnedMovies = [...currentOwnedMovies];
+      newOwnedMovies.push(movie.id);
+      dispatch(setCurrentMoney(newMoney));
+      dispatch(setCurrentOwnedMovies([...newOwnedMovies]));
+      alert(
+        `Purchase on Movie: ${movie.title || movie.name} for Rp${getIdrPrice(
+          getPrice()
+        )} was successful!`
+      );
+    } else {
+      alert("Purchase was unsuccesful, you have insufficient funds.");
+    }
   };
 
   useEffect(() => {
