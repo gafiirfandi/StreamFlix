@@ -1,0 +1,106 @@
+.detail-movie {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 150px;
+}
+
+.detail-movie-main {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+/* MOVIE IMAGE*/
+
+.detail-movie-image {
+  width: 20vw;
+  height: 70vh;
+  margin-right: 20px;
+}
+
+/* MOVIE INFO */
+
+.detail-movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-movie-header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.detail-movie-title {
+  font-size: 31px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.detail-movie-oval {
+  width: 40px;
+  height: min-content;
+  background-color: #c7493a;
+  border-radius: 20px;
+}
+
+.detail-movie-rating {
+  text-align: center;
+  color: #e9ad3a;
+  font-weight: 700;
+  margin: 0;
+}
+
+.detail-movie-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.detail-movie-buy {
+  background-color: #c7493a;
+  color: white;
+  padding: 10px;
+  width: 70px;
+  border-radius: 120px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  margin-left: 20px;
+}
+
+.detail-movie-owned {
+  background-color: rgb(166, 255, 0);
+  color: rgb(11, 0, 32);
+}
+
+/* MOVIE OVERVIEW */
+
+.detail-movie-overview {
+  margin-top: 40px;
+}
+
+/* MOVIE CASTS */
+
+.detail-movie-casts {
+  display: flex;
+}
+
+.detail-movie-cast {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.detail-movie-cast-img {
+  width: 10vw;
+  height: auto;
+  box-shadow: #1c1c1c 1px 1px 1px 1px;
+}
+
+.detail-movie-cast-name {
+  margin: 0;
+}
+
+.detail-movie-cast-character {
+  font-size: 13px;
+  color: #c7493a;
+}

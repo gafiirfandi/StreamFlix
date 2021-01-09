@@ -1,0 +1,57 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  width: 100vw;
+  height: fit-content;
+  top: 0;
+  z-index: 100;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  position: fixed;
+}
+
+/* NAVBAR LEFT */
+
+.nav-brand {
+  font-family: "Oswald", sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #c7493a;
+  text-decoration: none;
+}
+
+.nav-black {
+  background-color: rgb(11, 0, 32);
+}
+
+/* NAVBAR RIGHT */
+
+.nav-right {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  min-width: 20vw;
+}
+
+.nav-div-money {
+  position: fixed;
+  right: 3%;
+  display: flex;
+  gap: 10px;
+  margin-left: 3vw;
+}
+
+.nav-coin-logo {
+  padding-top: 20px;
+  height: 30px;
+  width: auto;
+}
+
+.nav-money {
+  padding-top: 25px;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
