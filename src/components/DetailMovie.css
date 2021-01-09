@@ -35,6 +35,7 @@
   font-size: 31px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
+  width: max-content;
 }
 
 .detail-movie-oval {
